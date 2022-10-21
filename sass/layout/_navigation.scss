@@ -1,0 +1,42 @@
+.navigation a:link {
+    color: rgb(255, 255, 255);
+}
+
+.navigation a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.navigation a:active {
+    color: #ffffff;
+}
+
+.navigation a:link {
+    text-decoration: none;
+}
+
+
+.navigation {
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+.navigation a:hover {
+    text-decoration-line: underline;
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .navigation a,
+    .navigation {
+        float: none;
+        display: block;
+    }
+}
