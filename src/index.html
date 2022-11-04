@@ -15,10 +15,21 @@
 
         <div class="homeDiv" id="homePage">
 
-            <div class="navigation">
-                <a href="#homePage">Hem</a>
-                <a href="#aboutPage">Om</a>
-                <a href="#contact">Kontakt</a>
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu_box">
+                <li><a class="menu_items" href="#homePage">Hem</a></li>
+                <li><a class="menu_items" href="#aboutPage">Om</a></li>
+                <li><a class="menu_items" href="#contact">Kontakt</a></li>
+            </ul>
+
+
+
+            <div class="navigation" id="humberger-menu">
+
+
             </div>
 
             <div class="home_text">
@@ -26,7 +37,7 @@
                 <h2>A journey through time and sheep</h2><br>
                 <h2>To see how ...cotton ... is mage, made I mean...</h2>
             </div>
-            <div><i class="fa-solid fa-circle-down fa-2x"></i></div>
+            <div><a href="#aboutPage"><i class="fa-solid fa-circle-down fa-2x"></i></a></div>
         </div>
         <!--Home page end-->
         <div>
@@ -110,7 +121,7 @@
         </div>
     </div>
     </div>
-
+     <div><a href="#contact"><i class="fa-regular fa-circle-down fa-2x"></i></a></div>
     <div class="footer" id="contact">
         <div id="contactDiv">
             <div class="One">

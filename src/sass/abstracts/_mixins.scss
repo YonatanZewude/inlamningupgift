@@ -160,7 +160,7 @@
     height: 200px;
     width: 100%;
     color: rgb(255, 255, 255);
-    margin-top: 100px;
+    margin-top: 30px;
     margin-bottom: auto;
 
   }
@@ -191,29 +191,51 @@
   }
 }
 
-@mixin button {
-
+@mixin top_arrow {
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
-  margin-top: 170%;
+  margin-top: 180%;
   margin-left: 50%;
   margin-right: 50%;
 
-  @include desktopButton {}
+  @include top_arrow_desktop {}
 
 }
 
-@mixin desktopButton {
+@mixin top_arrow_desktop {
   @media screen and (min-width: variables.$desktop) {
     @content;
     color: rgb(255, 255, 255);
+    margin-top: auto;
+    position: relative;
+    margin-left: 50%;
+    margin-right: 50%;
+    top: 50rem;
+  }
+}
+
+@mixin bottom_arrow {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 50%;
+  margin-right: 50%;
+
+  @include bottom_arrow_desktop {}
+
+}
+
+@mixin bottom_arrow_desktop {
+  @media screen and (min-width: variables.$desktop) {
+    @content;
+    color: black;
     margin-top: auto;
     margin-bottom: auto;
     position: relative;
     margin-left: 50%;
     margin-right: 50%;
-    top:40rem;
-
   }
 }

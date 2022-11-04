@@ -15,5 +15,9 @@
 }
 
 .fa-solid {
-  @include m.button
+  @include m.top_arrow
+}
+
+.fa-regular {
+  @include m.bottom_arrow
 }
