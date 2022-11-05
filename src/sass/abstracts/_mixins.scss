@@ -14,9 +14,7 @@
 
 @mixin Welcome {
   text-align: center;
-
 }
-
 
 @mixin textFirstPage {
   color: rgb(255, 255, 255);
@@ -38,8 +36,6 @@
 
 /*Home page styles end*/
 
-
-
 @mixin aboutPage {
   background: rgb(255, 255, 255);
   height: 205vh;
@@ -52,7 +48,6 @@
   @include desktopAbout {
     height: 130vh;
     width: 100%;
-
 
     .desktopView {
       display: flex;
@@ -78,7 +73,6 @@
     margin-top: auto;
     display: inline;
   }
-
 }
 
 @mixin parentDiv {
@@ -139,7 +133,6 @@
 
 }
 
-
 @mixin footer {
   width: 100%;
   height: 70vh;
@@ -147,8 +140,6 @@
   color: white;
   display: flex;
   justify-content: center;
-
-
 
   @include desktopFooter {}
 }
@@ -187,7 +178,6 @@
     gap: 300px;
     justify-content: center;
     align-items: center;
-
   }
 }
 
@@ -211,7 +201,7 @@
     position: relative;
     margin-left: 50%;
     margin-right: 50%;
-    top: 50rem;
+    top: 36rem;
   }
 }
 
@@ -225,7 +215,6 @@
   margin-right: 50%;
 
   @include bottom_arrow_desktop {}
-
 }
 
 @mixin bottom_arrow_desktop {
